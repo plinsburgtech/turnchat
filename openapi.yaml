@@ -3,7 +3,7 @@ info:
   title: Chat History Export API
   version: 1.0.0
 servers:
-  - url: https://your-domain.com
+  - url: https://turnchat.magictools.dev
 paths:
   /export:
     post:

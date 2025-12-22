@@ -2,3 +2,6 @@ __pycache__/
 .vscode/
 .claude/
 venv/
+*.pyc
+.env
+.DS_Store
