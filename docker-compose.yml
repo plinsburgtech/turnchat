@@ -1,0 +1,18 @@
+services:
+  api:
+    build: ./api
+    container_name: turnchat-api
+    restart: unless-stopped
+    ports:
+      - "3636:8000"
+    environment:
+      PYTHONUNBUFFERED: 1
+
+  mcp:
+    build: ./mcp
+    container_name: turnchat-mcp
+    restart: unless-stopped
+    ports:
+      - "8888:3636"
+    environment:
+      NODE_ENV: production
